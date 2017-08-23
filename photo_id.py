@@ -4,12 +4,17 @@ photo_styles = [
 "wildlife", "snapshot"
 ]
 
+rangefinders = [
+"Leica", "Zeiss",
+]
+
 printed_list = ", ".join(photo_styles)
 
 # recommend cameras, lenses, other gear depending on camera type.
 
 def rangefinder():
-    print("We recommend a rangefinder camera. ")
+    print("We recommend a rangefinder camera. What is your budget?"
+    "please enter a number between 1000 and 10,000")
 
 def slr():
     pass
@@ -34,7 +39,7 @@ def user_pref():
         if pref.lower() in photo_styles:
             if pref.lower() == "street":
                 return rangefinder()
-                break
+                
             if pref.lower() == "portrait":
                 return medium_format()
                 break
