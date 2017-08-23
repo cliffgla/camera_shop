@@ -1,0 +1,4 @@
+Python program to help users decide what kind of photography they like. 
+
+-System prints questions, provides possible answers, and depending on user input, the system will recommend 
+a style of photography to study or practice. 
