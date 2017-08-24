@@ -16,6 +16,7 @@ inventory = [
 {"View Camera": 1000}
 
 ]
+
 printed_list = ", ".join(photo_styles)
 
 # recommend cameras, lenses, other gear depending on camera type.
