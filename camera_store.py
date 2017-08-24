@@ -51,7 +51,7 @@ def view_camera() :
 
 
 def medium_format():
-    print("We recommend a Mamiya. ")
+    print("We recommend a medium format camera. ")
 
 def fine_art():
     while True:
