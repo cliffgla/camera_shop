@@ -33,7 +33,7 @@ def slr():
             if lens_quest.lower() == "nikon":
                 print("Good news! Almost every current Nikon SLR is compatible!")
                 break
-            elif lens_quest.lower() == "canon":
+            if lens_quest.lower() == "canon":
                 print("If your lenses were made before 1987,",
                 "you will have to buy new lenses, in which case",
                 "we recommend either a Nikon or Canon SLR.")

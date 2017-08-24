@@ -1,6 +1,6 @@
 def slr():
+    print("We recommend an SLR camera")
     while True:
-        print("We recommend an SLR camera")
         print("Do you currently own Nikon or Canon lenses? [Y/n]")
         user_lens = input("> ")
         if user_lens.lower() == "y":
