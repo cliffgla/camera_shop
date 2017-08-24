@@ -11,6 +11,11 @@ rangefinders = [
 printed_list = ", ".join(photo_styles)
 
 # recommend cameras, lenses, other gear depending on camera type.
+# create a shopping cart
+# ask customer if they want to add the recommendation to the cart
+# option to view cart and to exit cart
+# option to remove items from cart
+# have a dictionary or list of items available to purchase. 
 
 def rangefinder():
     print("We recommend a rangefinder camera. What is your budget? "
