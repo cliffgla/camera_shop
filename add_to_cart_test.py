@@ -20,7 +20,17 @@ def cart_total():
     total = 0
     for key, value in cart.items():
         total += value
-    print(total) 
+    print(total)
+
+def shopping():
+    while True:
+        print("What would you like to buy?")
+        buy = input("> ")
+        if buy in inventory.keys():
+            print("Testing 123")
+
 add_to_cart()
 
 cart_total()
+
+#shopping()
