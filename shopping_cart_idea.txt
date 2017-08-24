@@ -1,0 +1,2 @@
+Ask user if they want to add the recommended camera to a shopping cart. Return
+total price and display number of items in cart. 
