@@ -37,6 +37,7 @@ def slr():
                 print("If your lenses were made before 1987,",
                 "you will have to buy new lenses, in which case",
                 "we recommend either a Nikon or Canon SLR.")
+                break
             else:
                 print("That is not a valid option. Enter Nikon or Canon.")
         elif user_lens.lower() == "n":
@@ -79,8 +80,8 @@ def user_pref():
     while shopping:
         print(printed_list+"?")
         print(" ")
-        pref = input("What kind of photography do you enjoy? ")
-        print (pref)
+        print("What kind of photography do you enjoy? ")
+        pref = input("> ")
 
         if pref.lower() in photo_styles:
             if pref.lower() == "street":
