@@ -27,19 +27,18 @@ def slr():
         print("We recommend an SLR camera")
         print("Do you currently own Nikon or Canon lenses? [Y/n]")
         user_lens = input("> ")
-        print(user_lens)
         if user_lens.lower() == "y":
             print("Nikon or Canon?")
             lens_quest = input("> ")
-            print(lens_quest)
             if lens_quest.lower() == "nikon":
                 print("Good news! Almost every current Nikon SLR is compatible!")
                 break
-            if lens_quest.lower() == "canon":
+            elif lens_quest.lower() == "canon":
                 print("If your lenses were made before 1987,",
                 "you will have to buy new lenses, in which case",
                 "we recommend either a Nikon or Canon SLR.")
-                break
+            else:
+                print("That is not a valid option. Enter Nikon or Canon.")
         elif user_lens.lower() == "n":
             print("Flip a coin: Canon and Nikon are both great.")
             break
@@ -53,6 +52,25 @@ def view_camera() :
 
 def medium_format():
     print("We recommend a Mamiya. ")
+
+def fine_art():
+    while True:
+        print("Do you prefer to hold your camera or put it on a tripod? "
+        "Enter 'handheld or 'tripod'.")
+        big_small = input("> ")
+        if big_small.lower() == "handheld":
+            print("We recommend and SLR or rangefinder. Randgefinders are "
+            "usually smaller. Which do you prefer? Enter SLR or rangefinder.")
+            fine_rec = input("> ")
+            if fine_rec.lower() == "slr":
+                return slr()
+            else:
+                return rangefinder()
+        elif big_small.lower() == "tripod":
+            return view_camera()
+        else:
+            print("That is not a valid option. "
+            "Enter 'handheld' or 'tripod'.")
 
 
 # take user input to decide what kind of camera to buy
@@ -81,6 +99,8 @@ def user_pref():
             if pref.lower() == "snapshot":
                 print("You're smartphone is already a great snapshot camera.")
                 break
+            if pref.lower() == "fine art":
+                return fine_art()
         else:
             print("That isn't an available option. Please choose from the list of"
             "available options: ")
