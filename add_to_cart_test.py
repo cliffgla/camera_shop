@@ -28,7 +28,7 @@ def shopping():
     while True:
         print("What would you like to buy?")
         buy = input("> ")
-        if buy.lower() in inventory.keys():
+        if buy.title() in inventory.keys():
             print("Testing 123")
 
 #add_to_cart()
