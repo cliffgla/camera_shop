@@ -1,11 +1,13 @@
-inventory = [
-{"Nikon": 800},
-{"Leica": 5000},
-{"Zeiss": 2000},
-{"Mamiya":1000},
-{"View Camera": 1000}
+inventory = {
 
-]
+"Nikon": 800,
+"Leica": 5000,
+"Zeiss": 2000,
+"Mamiya":1000,
+"View Camera": 1000
+
+}
+
 
 cart = {}
 
@@ -26,11 +28,11 @@ def shopping():
     while True:
         print("What would you like to buy?")
         buy = input("> ")
-        if buy in inventory.keys():
+        if buy.lower() in inventory.keys():
             print("Testing 123")
 
-add_to_cart()
+#add_to_cart()
 
-cart_total()
+#cart_total()
 
-#shopping()
+shopping()
