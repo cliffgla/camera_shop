@@ -26,13 +26,15 @@ def cart_total():
 
 def shopping():
     while True:
-        print("What would you like to buy?")
-        buy = input("> ")
-        if buy.title() in inventory.keys():
-            print("Testing 123")
+        print("What camera do you want?")
+        shopper = input("> ")
+        for key, value in inventory.items():
+            if shopper.title() == key:
+                cart.update({key:value})
+        print(cart)
 
 #add_to_cart()
 
-#cart_total()
-
 shopping()
+
+cart_total()
